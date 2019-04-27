@@ -1,0 +1,19 @@
+‘enter the value:’
+25
+‘given number 25 is odd’
+oem@santosh:~/Documents$ cat even_odd_number
+#!/bin/bash
+#script to detect given numbers is even or odd.
+#set -x
+echo ‘enter the value:’
+read N
+value=$N
+
+rem=$(( $value % 2 ))
+if [ $rem -eq 0 ] 
+then
+echo ‘given number $N is even’
+else
+echo ‘given number $N is odd’
+fi
+
